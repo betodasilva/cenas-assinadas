@@ -1,0 +1,21 @@
+2017-10-29T00:47:11+00:00 CRITICAL Uncaught Error: Call to a member function get_url() on null in /var/www/public/wp-content/plugins/revslider/includes/template.class.php:136
+Stack trace:
+#0 /var/www/public/wp-content/plugins/revslider/admin/revslider-admin.class.php(112): RevSliderTemplate->_get_template_list()
+#1 /var/www/public/wp-content/plugins/revslider/admin/revslider-admin.class.php(44): RevSliderAdmin->init()
+#2 /var/www/public/wp-content/plugins/revslider/revslider.php(168): RevSliderAdmin->__construct('/var/www/public...')
+#3 /var/www/public/wp-admin/includes/plugin.php(560): include_once('/var/www/public...')
+#4 /var/www/public/wp-admin/includes/plugin.php(752): activate_plugin('revslider/revsl...', 'http://cenasass...', false, false)
+#5 /var/www/public/wp-admin/plugins.php(99): activate_plugins(Array, 'http://cenasass...', false)
+#6 {main}
+  thrown
+
+2017-10-29T00:47:19+00:00 CRITICAL Uncaught Error: Call to a member function get_url() on null in /var/www/public/wp-content/plugins/revslider/includes/object-library.class.php:62
+Stack trace:
+#0 /var/www/public/wp-content/plugins/revslider/admin/revslider-admin.class.php(118): RevSliderObjectLibrary->_get_list()
+#1 /var/www/public/wp-content/plugins/revslider/admin/revslider-admin.class.php(44): RevSliderAdmin->init()
+#2 /var/www/public/wp-content/plugins/revslider/revslider.php(168): RevSliderAdmin->__construct('/var/www/public...')
+#3 /var/www/public/wp-admin/includes/plugin.php(1882): include('/var/www/public...')
+#4 /var/www/public/wp-admin/plugins.php(164): plugin_sandbox_scrape('revslider/revsl...')
+#5 {main}
+  thrown
+
