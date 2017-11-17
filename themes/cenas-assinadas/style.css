@@ -10,3 +10,7 @@
  Tags:         one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, editor-style, featured-images, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
  Text Domain:  rango
 */
+
+.main-navigation a {
+    background: red !important;
+}
