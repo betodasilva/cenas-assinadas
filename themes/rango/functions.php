@@ -1283,7 +1283,7 @@ function ftc_breadcrumbs_title($show_breadcrumb = false, $show_page_title = fals
 
         $style = '';
         if ($breadcrumb_bg != '') {
-            $style = 'style="background-image: url(' . $breadcrumb_bg . ')"';
+            $style = 'style="background-image: url(' . $breadcrumb_bg . ');background-size:cover;background-position:center;background-repeat:no-repeat;"';
             if (isset($smof_data['ftc_breadcrumb_bg_parallax']) && $smof_data['ftc_breadcrumb_bg_parallax']) {
                 $extra_class .= ' ftc-breadcrumb-parallax';
             }
