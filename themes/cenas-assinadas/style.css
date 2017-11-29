@@ -27,3 +27,16 @@
     width: 50%;
     line-height: 20px;
 }
+
+.woocommerce .product .item-description {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.woocommerce .product .images > a {
+    z-index: 7;
+}
+
+.woocommerce div.product div.images {
+    margin-bottom: 1em;
+}
