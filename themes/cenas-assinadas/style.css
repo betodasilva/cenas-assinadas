@@ -10,3 +10,20 @@
  Tags:         one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, editor-style, featured-images, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
  Text Domain:  rango
 */
+
+.about-us .wpb_wrapper p {
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.about-us__social .social_list ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.about-us__social .social_list ul li{
+    width: 50%;
+    line-height: 20px;
+}
