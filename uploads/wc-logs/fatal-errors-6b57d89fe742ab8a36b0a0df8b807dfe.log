@@ -19,3 +19,11 @@ Stack trace:
 #5 {main}
   thrown
 
+2017-11-22T22:25:23+00:00 CRITICAL Uncaught Error: Call to a member function get_image() on boolean in /var/www/public/wp-content/themes/cenas-assinadas/search.php:37
+Stack trace:
+#0 /var/www/public/wp-includes/template-loader.php(74): include()
+#1 /var/www/public/wp-blog-header.php(19): require_once('/var/www/public...')
+#2 /var/www/public/index.php(17): require('/var/www/public...')
+#3 {main}
+  thrown
+
