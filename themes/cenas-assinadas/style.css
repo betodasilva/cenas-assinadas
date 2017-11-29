@@ -79,3 +79,11 @@
     left: -5px;
     z-index: 991;
 }
+
+.owl-item .ftc-product.product {
+    transition: box-shadow 0.5s cubic-bezier(.45,.05,.55,.95) 0.1s;
+}
+
+.item-description .meta_info {
+    transition: opacity 0.5s cubic-bezier(.45,.05,.55,.95);
+}
