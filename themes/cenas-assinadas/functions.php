@@ -10,5 +10,5 @@
             filemtime( get_stylesheet_directory() . '/style.css' )
         );
     }
-    add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
+    add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles', PHP_INT_MAX );
 ?>
