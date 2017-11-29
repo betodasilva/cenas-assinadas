@@ -40,3 +40,42 @@
 .woocommerce div.product div.images {
     margin-bottom: 1em;
 }
+
+.woocommerce #content div.product div.details-img, .woocommerce div.product div.details-img, .woocommerce-page #content div.product div.details-img, .woocommerce-page div.product div.details-img {
+    width: 62%;
+}
+
+.woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
+	width: 38%;
+}
+
+.ftc-search-product .ftc_search_ajax input[type="text"] {
+    transition: left 1s 0.1s cubic-bezier(.19,1,.22,1),height 0.4s;
+    -moz-transition: left 1s 0.1s cubic-bezier(.19,1,.22,1),height 0.4s;
+    -webkit-transition: left 1s 0.1s cubic-bezier(.19,1,.22,1),-webkit-transform 0.7s,height 0.4s;
+}
+
+.header-content .ftc-search-product .ftc-search:hover .ftc_search_ajax input[type="text"] {
+    opacity: 1;
+    right: 0px;
+    height: 35px;
+    width: 260px;
+    z-index: 999;
+}
+
+.header-layout2 .header-content .ftc-search-product .ftc-search {
+    min-width: 100px;
+    height: 50px;
+}
+
+@media (min-width: 768px) {
+    .header-layout2 .header-content .ftc-search-product .ftc-search {
+        max-width: 101px;
+    }
+}
+
+.header-layout2 .header-content .ftc-search-product .ftc-search:hover .ftc_search_ajax input[type="text"] {
+    right: auto;
+    left: -5px;
+    z-index: 991;
+}
