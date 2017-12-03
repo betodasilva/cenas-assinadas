@@ -96,5 +96,88 @@
     border: 5px solid #ebebeb;
 }
 
+.variations > tbody > tr > td  { display: block; }
+
+.variations td.label > label { font-size: 22px !important; }
+
+/* .woocommerce div.product form.cart .variations td.value .checkbox-var */
+
+.checkbox-variation {
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+}
+
+.checkbox-variation > input[name="attribute_moldura"] {
+    position: absolute;
+    margin: 0;
+    top: 10px;
+    left: 5px;
+}
+
+.checkbox-variation > .attribute_moldura {
+    width: 76px;
+    height: 76px;
+    position: relative;
+    background-position: 6px 6px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.checkbox-variation > .attribute_moldura.sem.moldura > p {
+    line-height: 1;
+    position: relative;
+    top: 32px;
+    right: 10px;
+}
+
+.checkbox-variation > input[name="attribute_moldura"]:checked ~ .attribute_moldura {
+    border-color: #000;
+}
+
+.checkbox-variation > .attribute_moldura.branca:after {
+    background-image: url('assets/images/mold-branca.jpg');
+}
+
+.checkbox-variation > .attribute_moldura.madeira:after {
+    background-image: url('assets/images/mold-madeira.jpg');
+}
+
+.checkbox-variation > .attribute_moldura.preta:after {
+    background-image: url('assets/images/mold-preta.jpg');
+}
+
+.checkbox-variation > .attribute_moldura:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: center bottom 3px;
+    background-repeat: no-repeat;
+}
+
+.checkbox-variation > .attribute_moldura > p {
+    font-size: 10px;
+    margin: 0;
+    padding-left: 24px;
+    width: 64px;
+}
 
 
+.summary.entry-summary .single_variation_wrap > .single_variation,
+.summary.entry-summary .single_variation_wrap > .variations_button {
+    display: inline-block;
+}
+
+.woocommerce div.product form.cart div.quantity { margin-bottom: 10px; }
+
+.summary.entry-summary .single_variation_wrap > .single_variation {
+    margin-left: 10%;    
+}
+
+.summary.entry-summary .single_variation_wrap > .variations_button {
+    margin-left: 5%;
+}
