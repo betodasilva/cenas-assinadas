@@ -42,11 +42,11 @@
 }
 
 .woocommerce #content div.product div.details-img, .woocommerce div.product div.details-img, .woocommerce-page #content div.product div.details-img, .woocommerce-page div.product div.details-img {
-    width: 62%;
+    width: 54%;
 }
 
 .woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
-	width: 38%;
+	width: 46%;
 }
 
 .ftc-search-product .ftc_search_ajax input[type="text"] {
@@ -98,14 +98,17 @@
 
 .variations > tbody > tr > td  { display: block; }
 
-.variations td.label > label { font-size: 22px !important; }
+.variations td.label > label { 
+    font-size: 22px !important; 
+    text-align: left;
+}
 
 /* .woocommerce div.product form.cart .variations td.value .checkbox-var */
 
 .checkbox-variation {
     display: inline-block;
     position: relative;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .checkbox-variation > input[name="attribute_moldura"] {
@@ -120,7 +123,7 @@
     height: 76px;
     position: relative;
     background-position: 6px 6px;
-    border: 1px solid transparent;
+    border: 1px solid #89a6c4;
     cursor: pointer;
 }
 
@@ -174,10 +177,55 @@
 
 .woocommerce div.product form.cart div.quantity { margin-bottom: 10px; }
 
-.summary.entry-summary .single_variation_wrap > .single_variation {
-    margin-left: 10%;    
+@media (min-width: 768px) {
+    .summary.entry-summary .single_variation_wrap > .variations_button {
+        margin-left: 15%;
+    }
 }
 
-.summary.entry-summary .single_variation_wrap > .variations_button {
-    margin-left: 5%;
+
+img.moldura_sem {
+    transition: all 660ms ease;
+}
+
+img.moldura_branca {
+	padding: 3.618em;
+	background: #fff;
+	border: 14px solid #e8e4e3;
+	width: 100%;
+	-webkit-box-shadow: 0 0 6px 3px #ccc inset !important;
+	-moz-box-shadow: 0 0 6px 3px #ccc inset !important;
+	box-shadow: 0 0 6px 3px #ccc inset !important;
+	transition: all 660ms ease;
+}
+
+img.moldura_madeira {
+	padding: 3.618em;
+	background: #fff;
+	border: 14px solid #49150F;
+	width: 100%;
+	-webkit-box-shadow: 0 0 6px 3px #ccc inset !important;
+	-moz-box-shadow: 0 0 6px 3px #ccc inset !important;
+	box-shadow: 0 0 6px 3px #ccc inset !important;
+	transition: all 660ms ease;
+}
+
+img.moldura_preta {
+	padding: 3.618em;
+	background: #fff;
+	border: 14px solid #000;
+	width: 100%;
+	-webkit-box-shadow: 0 0 6px 3px #ccc inset !important;
+	-moz-box-shadow: 0 0 6px 3px #ccc inset !important;
+	box-shadow: 0 0 6px 3px #ccc inset !important;
+	transition: 660ms all ease;
+}
+
+.summary .woocommerce-product-details__short-description {
+    margin-bottom: 5px;
+}
+
+.summary.entry-summary > p.price {
+	margin-top: 22px !important;
+	margin-bottom: 22px !important;
 }
