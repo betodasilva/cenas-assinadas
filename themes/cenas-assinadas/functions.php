@@ -20,6 +20,7 @@
             wp_register_script( 'wc-add-to-cart-variation', get_stylesheet_directory_uri() . '/assets/js/add-to-cart-variation.js', array( 'jquery', 'wp-util' ));
         }
         wp_enqueue_script('wc-add-to-cart-variation');
+        wp_enqueue_script('ca-frame-preview', get_stylesheet_directory_uri() . '/assets/js/ca-frame-preview.js', '1.0.0' );
     }
 
     add_action( 'wp_enqueue_scripts', 'load_scripts', 999 );
