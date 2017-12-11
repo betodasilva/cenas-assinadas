@@ -24,6 +24,13 @@
     }
 
     add_action( 'wp_enqueue_scripts', 'load_scripts', 999 );
+
+
+    function child_theme_slug_setup() {
+        load_theme_textdomain( 'rango', get_stylesheet_directory() . '/languages/rango' );
+        load_child_theme_textdomain( 'cenas-assinadas', get_stylesheet_directory() . '/languages' );
+    }
+    add_action( 'after_setup_theme', 'child_theme_slug_setup' );
 ?>
 
 
