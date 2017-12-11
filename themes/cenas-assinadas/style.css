@@ -293,3 +293,7 @@ img.moldura_preta {
         min-width: 120px;
     }
 }
+
+.custom_content {
+    display: none;
+}
