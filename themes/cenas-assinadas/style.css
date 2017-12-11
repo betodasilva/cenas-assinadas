@@ -283,3 +283,13 @@ img.moldura_preta {
 	margin-top: 22px !important;
 	margin-bottom: 22px !important;
 }
+
+.ftc_cart::before {
+	margin-right: 60px;
+}
+
+@media (min-width: 1024px) {
+    .ftc_cart::before {
+        min-width: 120px;
+    }
+}
