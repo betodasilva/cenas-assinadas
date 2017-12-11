@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Cenas Assinadas\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-10-05 03:59+0000\n"
-"PO-Revision-Date: 2017-12-11 15:12+0000\n"
+"PO-Revision-Date: 2017-12-11 15:11+0000\n"
 "Last-Translator: beto <jrs_robert@hotmail.com>\n"
 "Language-Team: Portuguese (Brazil)\n"
 "Language: pt-BR\n"
@@ -2446,7 +2446,7 @@ msgstr "Ordem Aleatória"
 
 #: inc/woo/functions.php:86
 msgid " SHOPPPING CART"
-msgstr "CARRINHO"
+msgstr "MEU CARRINHO"
 
 #: inc/woo/functions.php:106
 msgid "Your shopping cart is empty"
