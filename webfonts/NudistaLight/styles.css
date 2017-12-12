@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'NudistaLight';
+  src: url('NudistaLight.eot?#iefix') format('embedded-opentype'),  url('NudistaLight.otf')  format('opentype'),
+	     url('NudistaLight.woff') format('woff'), url('NudistaLight.ttf')  format('truetype'), url('NudistaLight.svg#NudistaLight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
