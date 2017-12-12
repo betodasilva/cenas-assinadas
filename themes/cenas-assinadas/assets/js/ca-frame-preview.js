@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
     const d = document;
-    d.querySelectorAll('input[name="attribute_moldura"]').forEach( function(e) {
+    d.querySelectorAll('input[name="attribute_pa_moldura"]').forEach( function(e) {
         e.addEventListener('change', changePhotoPreview);
         if (e.checked) {
             const image = d.querySelector('.product .images img');

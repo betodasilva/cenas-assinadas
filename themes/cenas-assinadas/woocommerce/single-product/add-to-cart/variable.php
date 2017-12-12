@@ -14,15 +14,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if ( ! function_exists( 'print_attribute_radio' ) ) {
-	function print_attribute_radio( $checked_value, $value, $label, $name ) {
+	function print_attribute_radio( $checked_value, $value, $label, $attr_name ) {
 		global $product;
+		$name = str_replace( ' ', '_', strtolower($attr_name) );
 		$input_name = 'attribute_' . esc_attr( $name ) ;
 		$esc_value = esc_attr( $value );
 		$id = esc_attr( $name . '_v_' . $value . $product->get_id() ); //added product ID at the end of the name to target single products
 		$class = esc_attr( $name . '_' . $value );
 		$checked = checked( $checked_value, $value, false );
 		$filtered_label = apply_filters( 'woocommerce_variation_option_name', $label );
-		printf( '<div class="checkbox-variation"><input type="radio" name="%1$s" value="%2$s" id="%3$s" class="%5$s" %4$s><label class="%1$s %6$s" for="%3$s"><p>%6$s</p></label></div>', $input_name, $esc_value, $id, $checked, $class, $filtered_label );
+		$filtered_label = str_replace( ' ', '_', strtolower($filtered_label) );
+		if ( $filtered_label == 'sem_moldura') {
+			$pretty_name = str_replace( '_', ' ', $filtered_label );
+		} else {
+			$pretty_name = substr( $filtered_label, strpos( $filtered_label, "_" ) +1 );
+		}
+		
+		printf( '<div class="checkbox-variation"><input type="radio" name="%1$s" value="%2$s" id="%3$s" class="%6$s" %4$s><label class="%1$s %6$s" for="%3$s"><p>%7$s</p></label></div>', $input_name, $esc_value, $id, $checked, $class, $filtered_label, $pretty_name );
 	}
 }
 
