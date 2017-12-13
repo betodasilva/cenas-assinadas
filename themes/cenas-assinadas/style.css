@@ -329,3 +329,25 @@ img.corpassepartout_bege {
 .header-layout2 .navigation-primary {
     background-color: #4d7b80;
 }
+
+.ftc-breadcrumb {
+    position: relative;
+}
+
+.ftc-breadcrumb::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.4);
+}
+
+.ftc-breadcrumb-title .ftc-breadcrumbs-content a, .ftc-breadcrumb-title .ftc-breadcrumbs-content span {
+    color: #ebebeb;
+}
+
+span.breadcrumb-active:last-child {
+    color: #fff;
+}
