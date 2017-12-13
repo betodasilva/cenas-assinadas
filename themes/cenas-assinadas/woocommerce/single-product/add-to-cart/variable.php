@@ -24,7 +24,7 @@ if ( ! function_exists( 'print_attribute_radio' ) ) {
 		$checked = checked( $checked_value, $value, false );
 		$filtered_label = apply_filters( 'woocommerce_variation_option_name', $label );
 		$filtered_label = str_replace( ' ', '_', strtolower($filtered_label) );
-		if ( $filtered_label == 'sem_moldura') {
+		if ( $filtered_label == 'sem_moldura' || $filtered_label == 'sem_passepartout' || $filtered_label == 'sem_cor') {
 			$pretty_name = str_replace( '_', ' ', $filtered_label );
 		} else {
 			$pretty_name = substr( $filtered_label, strpos( $filtered_label, "_" ) +1 );
