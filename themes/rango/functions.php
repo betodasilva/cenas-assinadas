@@ -1084,7 +1084,7 @@ if (!function_exists('ftc_breadcrumbs')) {
 
         if (ftc_has_woocommerce()) {
             if (function_exists('woocommerce_breadcrumb') && function_exists('is_woocommerce') && is_woocommerce()) {
-                woocommerce_breadcrumb(array('wrap_before' => '<div class="ftc-breadcrumbs-content">', 'delimiter' => '<span>' . ($is_rtl ? '\\' : '/') . '</span>', 'wrap_after' => '</div>'));
+                woocommerce_breadcrumb(array('wrap_before' => '<div class="ftc-breadcrumbs-content">', 'delimiter' => '<span>' . ($is_rtl ? '\\' : '/') . '</span>', 'before' => '<span class="breadcrumb-active">', 'after' => '</span>', 'wrap_after' => '</div>'));
                 return;
             }
         }
