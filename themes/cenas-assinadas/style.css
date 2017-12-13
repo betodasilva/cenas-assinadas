@@ -243,7 +243,6 @@ img.sem_moldura {
 }
 
 img.moldura_branca {
-	padding: 3.618em;
 	background: #fff;
 	border: 14px solid #e8e4e3;
 	width: 100%;
@@ -254,7 +253,6 @@ img.moldura_branca {
 }
 
 img.moldura_madeira {
-	padding: 3.618em;
 	background: #fff;
 	border: 14px solid #49150F;
 	width: 100%;
@@ -265,7 +263,6 @@ img.moldura_madeira {
 }
 
 img.moldura_preta {
-	padding: 3.618em;
 	background: #fff;
 	border: 14px solid #000;
 	width: 100%;
@@ -273,6 +270,19 @@ img.moldura_preta {
 	-moz-box-shadow: 0 0 6px 3px #ccc inset !important;
 	box-shadow: 0 0 6px 3px #ccc inset !important;
 	transition: 660ms all ease;
+}
+
+
+img.passepartout_5cm {
+    padding: 1.26em;
+}
+
+img.passepartout_10cm {
+    padding: 2.52em;
+}
+
+img.passepartout_15cm {
+    padding: 3.618em;
 }
 
 .summary .woocommerce-product-details__short-description {
