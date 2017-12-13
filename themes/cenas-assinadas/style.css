@@ -285,6 +285,24 @@ img.passepartout_15cm {
     padding: 3.618em;
 }
 
+/* CORES DO PASSEPARTOUT */
+
+img.corpassepartout_preto, img.corpassepartout_bege {
+    box-shadow: none !important;
+}
+
+img.corpassepartout_branco {
+    background-color: #fff;
+}
+
+img.corpassepartout_preto {
+    background-color: #000;
+}
+
+img.corpassepartout_bege {
+    background-color: #f8efca;
+}
+
 .summary .woocommerce-product-details__short-description {
     margin-bottom: 5px;
 }
