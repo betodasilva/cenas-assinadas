@@ -142,19 +142,41 @@
     border: 5px solid #ebebeb;
 }
 
+/* SINGLE PRODUCT */
+
+.summary.entry-summary > h1.product_title.entry-title {
+    border-bottom: 1px dashed #ccc;
+}
 .variations > tbody > tr > td  { display: block; }
 
 .variations td.label > label { 
-    font-size: 22px !important; 
+    font-size: 18px !important; 
+    line-height: 1 !important;
     text-align: left;
 }
 
+.variations tr[class*="attribute-pa_"] {
+    display: block; 
+}
+
+.variations tr[class*="attribute-pa_"] {
+    margin-top: 20px;
+}
 /* .woocommerce div.product form.cart .variations td.value .checkbox-var */
 
 .checkbox-variation {
     display: inline-block;
     position: relative;
-    margin-right: 20px;
+    margin-right: 30px;
+}
+@media (max-width: 480px) {
+    .checkbox-variation:nth-child(odd) {
+        margin-right: 50px;
+    }
+
+    .checkbox-variation {
+        margin-bottom: 15px;
+    }
 }
 
 .checkbox-variation > input[name="attribute_pa_moldura"],
@@ -394,4 +416,21 @@ img.corpassepartout_bege {
 
 span.breadcrumb-active:last-child {
     color: #fff;
+}
+
+.woocommerce div.product p.stock,
+.woocommerce div.product .woocommerce-product-rating {
+    display: inline-block;
+    width: 50%;
+    margin-top: 30px;
+}
+
+.woocommerce div.product .woocommerce-product-rating {
+    text-align: right;
+    float: right;
+    line-height: 1;
+}
+
+.woocommerce-product-details__short-description {
+    margin-top: 30px;
 }

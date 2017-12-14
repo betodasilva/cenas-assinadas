@@ -31,6 +31,27 @@
         load_child_theme_textdomain( 'cenas-assinadas', get_stylesheet_directory() . '/languages' );
     }
     add_action( 'after_setup_theme', 'child_theme_slug_setup' );
+
+    /* change single product layout */
+
+    function change_single_product_layout() {
+
+        remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating', 2);
+        remove_action('woocommerce_single_product_summary', 'ftc_template_single_availability', 4);
+        remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 6);
+        remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
+
+        add_action('bt_after_product_image', 'woocommerce_template_single_rating', 20);
+        add_action('bt_after_product_image', 'ftc_template_single_availability', 30);
+        add_action('bt_after_product_image', 'woocommerce_template_single_excerpt', 40);
+
+    }
+    add_action( 'init', 'change_single_product_layout' );
+
+    // remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10);
+
+    // add_action( 'woocommerce_after_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
+
 ?>
 
 
