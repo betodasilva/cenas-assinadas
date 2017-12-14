@@ -196,6 +196,7 @@
     left: 30px;
 }
 
+
 .checkbox-variation > .attribute_pa_moldura,
 .checkbox-variation > .attribute_pa_passepartout {
     width: 76px;
@@ -280,6 +281,51 @@
     padding-top: 32px;
 
 }
+
+.checkbox-variation > input[name="attribute_pa_cor-do-passepartout"] {
+    position: relative;
+    left: 9px;
+    top: 3px;
+}
+
+.checkbox-variation > input[name="attribute_pa_cor-do-passepartout"][disabled] {
+    z-index: 2;
+}
+
+.checkbox-variation > input[name="attribute_pa_cor-do-passepartout"]:checked:not(.sem_cor) ~ label:before {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23), 0 0px 0px 3px rgb(240, 83, 76);
+    border: 2px solid #fff;
+}
+
+.checkbox-variation > .attribute_pa_cor-do-passepartout {
+    position: relative;
+}
+
+.checkbox-variation > .attribute_pa_cor-do-passepartout:before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    left: 8px;
+    top: -25px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+
+.checkbox-variation > .attribute_pa_cor-do-passepartout.corpassepartout_preto:before {
+    background: #000;
+}
+
+.checkbox-variation > .attribute_pa_cor-do-passepartout.corpassepartout_branco:before {
+    background: #fff;
+}
+
+.checkbox-variation > .attribute_pa_cor-do-passepartout.corpassepartout_bege:before {
+    background: #f8efca;
+}
+
+
 
 
 .summary.entry-summary .single_variation_wrap > .single_variation,
