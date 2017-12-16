@@ -24,12 +24,17 @@ if ( ! function_exists( 'print_attribute_radio' ) ) {
 		$checked = checked( $checked_value, $value, false );
 		$filtered_label = apply_filters( 'woocommerce_variation_option_name', $label );
 		$filtered_label = str_replace( ' ', '_', strtolower($filtered_label) );
-		if ( $filtered_label == 'sem_moldura' || $filtered_label == 'sem_passepartout' || $filtered_label == 'sem_cor') {
-			$pretty_name = str_replace( '_', ' ', $filtered_label );
-		} else {
-			$pretty_name = substr( $filtered_label, strpos( $filtered_label, "_" ) +1 );
+		if (preg_match('/^[a-z]+_[a-z0-9]+$/i', $filtered_label)) {
+			// contains an underscore and is two words
+			if ( $filtered_label == 'sem_moldura' || $filtered_label == 'sem_passepartout' || $filtered_label == 'sem_cor' ) {
+				$pretty_name = str_replace( '_', ' ', $filtered_label );
+			} else {
+				
+				$pretty_name = substr( $filtered_label, strpos( $filtered_label, "_" ) +1 );
+			}
+		}else {
+			$pretty_name = $filtered_label;
 		}
-		
 		printf( '<div class="checkbox-variation"><input type="radio" name="%1$s" value="%2$s" id="%3$s" class="%6$s" %4$s><label class="%1$s %6$s" for="%3$s"><p>%7$s</p></label></div>', $input_name, $esc_value, $id, $checked, $class, $filtered_label, $pretty_name );
 	}
 }
