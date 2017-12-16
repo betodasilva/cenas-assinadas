@@ -53,6 +53,3 @@
     // add_action( 'woocommerce_after_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
 
 ?>
-
-
-
