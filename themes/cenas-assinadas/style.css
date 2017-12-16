@@ -299,6 +299,7 @@
 
 .checkbox-variation > .attribute_pa_cor-do-passepartout {
     position: relative;
+    cursor: pointer;
 }
 
 .checkbox-variation > .attribute_pa_cor-do-passepartout:before {
@@ -323,6 +324,58 @@
 
 .checkbox-variation > .attribute_pa_cor-do-passepartout.corpassepartout_bege:before {
     background: #f8efca;
+}
+
+.checkbox-variation > .attribute_pa_tamanho {
+    position: relative;
+    cursor: pointer;
+}
+
+.checkbox-variation:hover > .attribute_pa_tamanho:after {
+    display: block;
+}
+
+.checkbox-variation:hover >.attribute_pa_tamanho[for="pa_tamanho_v_60x40cm2279"]:before {
+    content: "60 x 40cm";
+    left: 5px;
+}
+
+.checkbox-variation:hover >.attribute_pa_tamanho.a3:before {
+    content: "42 x 27,9cm";
+}
+
+.checkbox-variation:hover >.attribute_pa_tamanho.a4:before {
+    content: "29,7 x 21cm";
+}
+
+.checkbox-variation:hover >.attribute_pa_tamanho.a5:before {
+    content: "21 x 14,8cm";
+}
+
+.checkbox-variation > .attribute_pa_tamanho:after {
+    content: "";
+    position: absolute;
+    left: -30px;
+    /* right: 0; */
+    bottom: -30px;
+    background: #89a6c4;
+    height: 30px;  
+    width: 100px; 
+    display: none;
+}
+
+.checkbox-variation > .attribute_pa_tamanho:before {
+    position: absolute;
+    font-size: 12px;
+    left: -15px;
+    /* right: 0; */
+    bottom: -30px;
+    width: 80px;
+    color: #fff;
+    font-family: 'Lato';
+    font-weight: 400;
+    z-index: 2;
+    text-transform: lowercase;
 }
 
 
@@ -415,6 +468,11 @@ img.corpassepartout_bege {
     background-color: #f8efca;
 }
 
+.attribute_pa_cor-do-passepartout > p { margin-bottom: 0; }
+
+
+/* LAYOUT SINGLE PRODUCT */
+
 .summary .woocommerce-product-details__short-description {
     margin-bottom: 5px;
 }
@@ -480,3 +538,10 @@ span.breadcrumb-active:last-child {
 .woocommerce-product-details__short-description {
     margin-top: 30px;
 }
+
+.header-layout2 #mega_main_menu.primary > .menu_holder > .menu_inner > ul > li.current_page_item, .header-layout2 #mega_main_menu > .menu_holder > .menu_inner > ul > li:hover, .header-layout2 #mega_main_menu.primary > .menu_holder > .menu_inner > ul > li.current-menu-ancestor > .item_link {
+    background: none !important;
+}
+
+
+
