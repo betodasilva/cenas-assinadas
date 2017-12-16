@@ -156,10 +156,7 @@
 }
 
 .variations tr[class*="attribute-pa_"] {
-    display: block; 
-}
-
-.variations tr[class*="attribute-pa_"] {
+    display: block;
     margin-top: 20px;
 }
 /* .woocommerce div.product form.cart .variations td.value .checkbox-var */
@@ -180,7 +177,8 @@
 }
 
 .checkbox-variation > input[name="attribute_pa_moldura"],
-.checkbox-variation > input[name="attribute_pa_passepartout"] {
+.checkbox-variation > input[name="attribute_pa_passepartout"],
+.checkbox-variation > input[name="attribute_pa_tamanho"] {
     position: absolute;
     margin: 0;
   
@@ -191,14 +189,16 @@
     left: 5px;
 }
 
-.checkbox-variation > input[name="attribute_pa_passepartout"] {
+.checkbox-variation > input[name="attribute_pa_passepartout"],
+.checkbox-variation > input[name="attribute_pa_tamanho"] {
     top: 24px;
     left: 30px;
 }
 
 
 .checkbox-variation > .attribute_pa_moldura,
-.checkbox-variation > .attribute_pa_passepartout {
+.checkbox-variation > .attribute_pa_passepartout,
+.checkbox-variation > .attribute_pa_tamanho {
     width: 76px;
     height: 76px;
     position: relative;
@@ -226,7 +226,8 @@
 }
 
 .checkbox-variation > input[name="attribute_pa_moldura"]:checked ~ .attribute_pa_moldura,
-.checkbox-variation > input[name="attribute_pa_passepartout"]:checked ~ .attribute_pa_passepartout {
+.checkbox-variation > input[name="attribute_pa_passepartout"]:checked ~ .attribute_pa_passepartout,
+.checkbox-variation > input[name="attribute_pa_tamanho"]:checked ~ .attribute_pa_tamanho {
     border-color: #000;
 }
 
@@ -270,16 +271,25 @@
 
 
 .checkbox-variation > .attribute_pa_moldura > p,
-.checkbox-variation > .attribute_pa_passepartout > p {
+.checkbox-variation > .attribute_pa_passepartout > p,
+.checkbox-variation > .attribute_pa_tamanho > p {
     font-size: 10px;
     margin: 0;
     padding-left: 24px;
     width: 64px;
 }
 
-.checkbox-variation > .attribute_pa_passepartout > p {
+.checkbox-variation > .attribute_pa_passepartout > p,
+.checkbox-variation > .attribute_pa_tamanho > p {
     padding-top: 32px;
+}
 
+.checkbox-variation > .attribute_pa_tamanho > p {
+    padding-left: 30px;
+}
+
+.checkbox-variation > .attribute_pa_tamanho.\36 0x40cm > p {
+    padding-left: 12px;
 }
 
 .checkbox-variation > input[name="attribute_pa_cor-do-passepartout"] {
@@ -326,11 +336,12 @@
     background: #f8efca;
 }
 
+.checkbox-variation > .attribute_pa_tamanho > p { margin-bottom: 0; }
+
 .checkbox-variation > .attribute_pa_tamanho {
     position: relative;
     cursor: pointer;
 }
-
 .checkbox-variation:hover > .attribute_pa_tamanho:after {
     display: block;
 }
