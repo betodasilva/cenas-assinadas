@@ -60,6 +60,11 @@
 }
 
 @media (max-width: 480px) {
+
+    .header-layout2 .ftc_search_ajax .search-button {
+        left: 190px !important;
+    }
+
     .woocommerce #content div.product div.details-img, .woocommerce div.product div.details-img, .woocommerce-page #content div.product div.details-img, .woocommerce-page div.product div.details-img {
         width: 100%;
     }
@@ -70,7 +75,7 @@
     }
 
     .header-layout2 .header-content .ftc-search-product .ftc-search form .ftc_search_ajax input[type="text"] {
-        left: -20px !important;
+        left: -0px !important;
     }
 
     .header-content .navigation-primary .container {
@@ -136,12 +141,23 @@
 }
 
 .vc_separator h4 {
-	font-size: 42px;
+	font-size: 32px;
 }
 
 .ftc-sb-testimonial .owl-item:hover .testimonial-content .avatar{
     border: 5px solid #ebebeb;
 }
+
+@media (max-width: 820px) {
+    #mega_main_menu > .menu_holder {
+        background-color: #4d7b80;
+    }   
+
+    .menu_holder > .menu_inner > .nav_logo .mobile_toggle .mobile_button {
+        color: #fff !important;
+    }
+}
+
 
 /* SINGLE PRODUCT */
 
@@ -559,5 +575,6 @@ span.breadcrumb-active:last-child {
     background: none !important;
 }
 
-
-
+.footer-middle .ftc-footer .list-icons a.instagram:hover {
+    color: #c13584;
+}
