@@ -148,14 +148,12 @@
     border: 5px solid #ebebeb;
 }
 
-@media (max-width: 820px) {
-    #mega_main_menu > .menu_holder {
-        background-color: #4d7b80 !important;
-    }   
+#mega_main_menu > .menu_holder {
+    background-color: #4d7b80 !important;
+}   
 
-    .menu_holder > .menu_inner > .nav_logo .mobile_toggle .mobile_button {
-        color: #fff !important;
-    }
+.menu_holder > .menu_inner > .nav_logo .mobile_toggle .mobile_button {
+    color: #fff !important;
 }
 
 
