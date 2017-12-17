@@ -66,6 +66,7 @@
     
     .woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
         width: 100%;
+        padding-left: 0;
     }
 
     .header-layout2 .header-content .ftc-search-product .ftc-search form .ftc_search_ajax input[type="text"] {
@@ -187,6 +188,10 @@
 .checkbox-variation > input[name="attribute_pa_moldura"] {
     top: 10px;
     left: 5px;
+}
+
+.checkbox-variation > input[name="attribute_pa_moldura"].sem_moldura {
+    left: 30px;
 }
 
 .checkbox-variation > input[name="attribute_pa_passepartout"],
@@ -346,7 +351,7 @@
     display: block;
 }
 
-.checkbox-variation:hover >.attribute_pa_tamanho[for="pa_tamanho_v_60x40cm2279"]:before {
+.checkbox-variation:hover >.attribute_pa_tamanho.\36 0x40cm:before {
     content: "60 x 40cm";
     left: 5px;
 }
