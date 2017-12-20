@@ -185,12 +185,20 @@
     margin-right: 30px;
 }
 @media (max-width: 480px) {
-    .checkbox-variation:nth-child(odd) {
-        margin-right: 50px;
-    }
 
     .checkbox-variation {
         margin-bottom: 15px;
+    }
+    .checkbox-variation:not(:last-child) {
+        margin-right: 5px;
+    }
+
+    .checkbox-variation:last-child {
+        margin-right: 0;
+    }
+
+    .attribute-pa_cor-do-passepartout .checkbox-variation:not(:last-child) {
+        margin-right: 30px;
     }
 }
 
@@ -585,4 +593,11 @@ span.breadcrumb-active:last-child {
         width: 50%;
         float: left;    
     }
+
+    .ftc-shop-cart > .ftc-shoppping-cart > .ftc_cart:before {
+        top: 0 !important;
+        margin-right: 0;
+    }
 }
+
+
