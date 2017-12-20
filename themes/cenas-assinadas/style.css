@@ -200,6 +200,23 @@
     .attribute-pa_cor-do-passepartout .checkbox-variation:not(:last-child) {
         margin-right: 30px;
     }
+
+    .woocommerce div.product .woocommerce-tabs ul.tabs li a {
+        font-size: 14px;
+        padding-right: 5px;
+    }
+    .woocommerce div.product .woocommerce-tabs ul.tabs li:not(:last-child) {
+        padding-right: 5px;
+    }
+
+    .related.products .products .ftc-product.product {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    #ftc_footer-8 {
+        padding: 1em 0;
+    }
 }
 
 .checkbox-variation > input[name="attribute_pa_moldura"],
