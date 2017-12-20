@@ -579,3 +579,10 @@ span.breadcrumb-active:last-child {
 .footer-middle .ftc-footer .list-icons a.instagram:hover {
     color: #c13584;
 }
+
+@media (max-width: 480px) {
+    #ftc_footer-8 > .vc_col-sm-3 {
+        width: 50%;
+        float: left;    
+    }
+}
