@@ -44,7 +44,7 @@ ftc_breadcrumbs_title($show_breadcrumb, $show_page_title, get_the_title());
      <?php endif; ?>
     </aside>
    <?php endif; ?>
-  <main id="main" class="site-main" >
+<main id="main" class="site-main <?php if($page_column_class['left_sidebar']): ?> col-sm-9 <? endif; ?>" >
 
    
     <?php
