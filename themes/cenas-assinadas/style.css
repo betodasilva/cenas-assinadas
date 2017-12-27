@@ -646,3 +646,8 @@ span.breadcrumb-active:last-child {
 	height: 50px;
 }
 
+@media (min-width: 1024px) {
+    .container #mega_main_menu.primary > .menu_holder > .menu_inner > ul > li > .item_link  {
+        padding: 0 19px !important;
+    }
+}
